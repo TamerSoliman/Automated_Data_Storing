@@ -1,5 +1,5 @@
 1. #!/bin/bash
-2. cd /home/tamer/from_win/
+2. cd /home/tamer/recipient/
 3. #delete txt file that triggered current bash script
 4. rm ./success.txt
 5. #start the postgresql server
@@ -16,6 +16,6 @@
 16. #exploit it to send email alert in case of failure
 17. if (( $a != 0 )) 
 18. then 
-19. /home/tamer/from_win/email_alert.py
+19. /home/tamer/recipient/email_alert.py
 20.  fi
 21. 
